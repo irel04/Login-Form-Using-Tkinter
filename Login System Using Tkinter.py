@@ -20,7 +20,14 @@ heading.place(x=100, y=5)
 
 # User entry box
 
+def on_enter():
+    user.delete(0, "end")
 
+def on_leave():
+    name=user.get()
+    if name == "":
+        user.insert(0,"")
+        
 user = Entry(frame, width=25, fg="black", border=0, bg="white", font=("Microsoft Yahei Light",11))
 user.place(x=30, y=80)
 user.insert(0,"Username")
