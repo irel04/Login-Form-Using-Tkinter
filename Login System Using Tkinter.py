@@ -37,6 +37,14 @@ user.bind("<FocusOut>", on_leave)
 Frame(frame, width=295, height=2, bg="black").place(x=25, y=107)
 
 # Password entry box
+def on_enter(e):
+    code.delete(0, "end")
+
+def on_leave(e):
+    name=code.get()
+    if name == "":
+        code.insert(0,"Password")
+
 
 code = Entry(frame, width=25, fg="black", border=0, bg="white", font=("Microsoft Yahei Light",11))
 code.place(x=30, y=150)
