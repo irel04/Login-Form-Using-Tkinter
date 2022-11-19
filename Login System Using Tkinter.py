@@ -70,8 +70,10 @@ def sign_in():
 
         screen.mainloop
 
-    if username != "admin" and password != "1234":
+    elif username != "admin" and password != "1234":
         messagebox.showerror("Invalid", "Invalid username and password")
+    elif password != "1234":
+        messagebox.showerror("Invalid", "Invalid password")
     
 
 
