@@ -49,7 +49,7 @@ def on_leave(e):
 code = Entry(frame, width=25, fg="black", border=0, bg="white", font=("Microsoft Yahei Light",11))
 code.place(x=30, y=150)
 code.insert(0,"Password")
-user.bind("<FocusIn>", on_enter)
+code.bind("<FocusIn>", on_enter)
 code.bind("<FocusOut>", on_leave)
 
 
