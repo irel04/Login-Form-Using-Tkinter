@@ -8,7 +8,7 @@ root.configure(bg="")
 root.resizable(False,False)
 
 # Frame of the GUI
-img = PhotoImage(file="images/login.png")
+img = PhotoImage(file="login.png")
 Label(root, image=img, bg="white").place(x=50, y=50)
 
 frame = Frame(root, width=350, height=350, bg="white")
