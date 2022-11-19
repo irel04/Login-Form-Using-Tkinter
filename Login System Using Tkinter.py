@@ -11,5 +11,5 @@ img = PhotoImage(file="images/login.png")
 Label(root, image=img, bg="white").place(x=50, y=50)
 
 frame = Frame(root, width=350, height=350, bg="red")
-
+frame.place(x=480, y=70)
 root.mainloop()
