@@ -56,7 +56,13 @@ code.bind("<FocusOut>", on_leave)
 Frame(frame, width=295, height=2, bg="black").place(x=25, y=177)
 
 # Sign in Button 
-Button(frame, width=39, pady=7, text="Sign in", bg="#57a1f8", fg="white", border=0).place(x=35, y=204)
+def sign_in():
+    username=user.get()
+    password=code.get()
+
+
+
+Button(frame, width=39, pady=7, text="Sign in", bg="#57a1f8", fg="white", border=0, command=sign_in).place(x=35, y=204)
 label = Label(frame, text="Don't have an account?", fg="black", bg="white", font=("Microsoft Yahei Light",9))
 label.place(x=75, y=270)
 
