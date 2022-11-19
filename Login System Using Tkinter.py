@@ -66,6 +66,9 @@ def sign_in():
         screen.geometry("925x500+300+200")
         screen.config(bg="white")
 
+        Label(screen, text="Hello Everyone", bg="#fff", font=("Calibri(Body)", 50, "bold")).pack(expand=True)
+
+        screen.mainloop
 
 
 
