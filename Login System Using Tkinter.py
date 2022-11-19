@@ -60,6 +60,13 @@ def sign_in():
     username=user.get()
     password=code.get()
 
+    if username == "admin" and password == "1234":
+        screen = Toplevel(root)
+        screen.title("Application")
+        screen.geometry("925x500+300+200")
+        screen.config(bg="white")
+
+
 
 
 Button(frame, width=39, pady=7, text="Sign in", bg="#57a1f8", fg="white", border=0, command=sign_in).place(x=35, y=204)
