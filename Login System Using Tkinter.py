@@ -30,4 +30,9 @@ code.place(x=30, y=150)
 code.insert(0,"Password")
 Frame(frame, width=295, height=2, bg="black").place(x=25, y=177)
 
+# Sign in Button 
+Button(frame, width=39, pady=7, text="Sign in", bg="#57a1f8", fg="white", border=0).place(x=35, y=204)
+
+
+
 root.mainloop()
