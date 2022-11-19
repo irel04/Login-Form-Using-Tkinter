@@ -26,8 +26,8 @@ Frame(frame, width=295, height=2, bg="black").place(x=25, y=107)
 
 # Password entry box
 code = Entry(frame, width=25, fg="black", border=0, bg="white", font=("Microsoft Yahei Light",11))
-code.place(x=30, y=80)
-code.insert(0,"Username")
-Frame(frame, width=295, height=2, bg="black").place(x=25, y=107)
+code.place(x=30, y=150)
+code.insert(0,"Password")
+Frame(frame, width=295, height=2, bg="black").place(x=25, y=177)
 
 root.mainloop()
