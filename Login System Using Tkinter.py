@@ -14,6 +14,6 @@ frame = Frame(root, width=350, height=350, bg="red")
 frame.place(x=480, y=70)
 
 heading = Label(frame, text="Sign in", fg="#57a1f8", bg="white", font=("Microsoft Yahei Light", 23, "bold"))
-
+heading.place(x=100, y=5)
 
 root.mainloop()
