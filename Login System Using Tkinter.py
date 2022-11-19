@@ -66,10 +66,13 @@ def sign_in():
         screen.geometry("925x500+300+200")
         screen.config(bg="white")
 
-        Label(screen, text="Hello Everyone", bg="#fff", font=("Calibri(Body)", 50, "bold")).pack(expand=True)
+        Label(screen, text="Data Structure \nand \nAlgorithm", bg="#fff", font=("Calibri(Body)", 50, "bold")).pack(expand=True)
 
         screen.mainloop
 
+    if username != "admin" and password != "1234":
+        messagebox.showerror("Invalid", "Invalid username and password")
+    
 
 
 Button(frame, width=39, pady=7, text="Sign in", bg="#57a1f8", fg="white", border=0, command=sign_in).place(x=35, y=204)
