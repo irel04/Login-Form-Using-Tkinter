@@ -19,9 +19,14 @@ heading = Label(frame, text="Sign in", fg="#57a1f8", bg="white", font=("Microsof
 heading.place(x=100, y=5)
 
 # User entry box
+
+
 user = Entry(frame, width=25, fg="black", border=0, bg="white", font=("Microsoft Yahei Light",11))
 user.place(x=30, y=80)
 user.insert(0,"Username")
+user.bind("<FocusIn>", on_enter)
+user.bind("<FocusOut>", on_leave)
+
 Frame(frame, width=295, height=2, bg="black").place(x=25, y=107)
 
 # Password entry box
