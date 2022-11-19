@@ -8,3 +8,4 @@ root.configure(bg="")
 root.resizable(False,False)
 
 img = PhotoImage(file="images/login.png")
+Label(root, image=img, bg="white").place(x=50, y=50)
